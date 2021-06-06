@@ -1,14 +1,11 @@
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+//import static org.hamcrest.CoreMatchers.*;
+//import static org.junit.Assert.*;
 
-import org.junit.Test;
+public class javatest {
 
-
-public class HelloJunitTest {
-
-    @Test
-    public void Helloと言う() {
-        HelloJunit helloJunit = new HelloJunit();
-        assertThat(helloJunit.sayHello(), is("Hello"));
-    }
+//    @Test
+//    public void Helloと言う() {
+//        HelloJunit helloJunit = new HelloJunit();
+//        assertThat(helloJunit.sayHello(), is("Hello"));
+//    }
 }
