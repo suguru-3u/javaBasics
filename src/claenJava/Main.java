@@ -9,9 +9,17 @@ public class Main {
 //		String str = str1 + str2;
 //		System.out.println("演算子による文字列の連結->"+ str)	;
 		
+//		String str1 = "文字列1";
+//		String str2  = "文字列2";
+//		String str = str1.concat(str2);
+//		System.out.println("演算子による文字列の連結->"+ str)	;
+		
 		String str1 = "文字列1";
 		String str2  = "文字列2";
-		String str = str1.concat(str2);
+		StringBuffer sb = new StringBuffer();
+		sb.append(str1);
+		sb.append(str2);
+		String str = sb.toString();
 		System.out.println("演算子による文字列の連結->"+ str)	;
-	 }
+	}
 }
