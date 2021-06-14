@@ -78,6 +78,9 @@ public class Book implements Comparable<Book> ,Cloneable{
 	public void setComment(String o) {
 		 this.comment = o;
 	}
+	
+//	a
+//	aaa
 }
 
 
