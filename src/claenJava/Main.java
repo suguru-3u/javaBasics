@@ -1,10 +1,5 @@
 package claenJava;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -54,49 +49,84 @@ public class Main {
 //		Book book3 = new Book("Java入門","2011-10-07","aaa");
 //		
 //		
-		SimpleDateFormat f = new SimpleDateFormat("yyyy/mm/dd");
-		ArrayList<Book> books = new ArrayList<>();
+//		SimpleDateFormat f = new SimpleDateFormat("yyyy/mm/dd");
+//		ArrayList<Book> books = new ArrayList<>();
+//		
+//		
+//		
+//		Book book1 = new Book();
+//		book1.setTitle("Java入門");
+//		
+//		try {
+//		    book1.setPublishDate(f.parse("2031/10/07"));
+//		    } catch (ParseException e) {
+//		    e.printStackTrace();
+//		    }
+//		
+//		book1.setComment("すっきりわかる");
+//		books.add(book1);
+//		
+//		Book book2 = new Book();
+//		book2.setTitle("python入門");
+//		
+//		try {
+//		    book2.setPublishDate(f.parse("2019/6/11"));
+//		    } catch (ParseException e) {
+//		    e.printStackTrace();
+//		    }
+//		book2.setComment("カレーが食べたくなる");
+//		books.add(book2);
+//		
+//		Book book3 = new Book();
+//		book3.setTitle("c言語入門");
+//		
+//		try {
+//		    book3.setPublishDate(f.parse("2018/6/21"));
+//		    } catch (ParseException e) {
+//		    e.printStackTrace();
+//		    }
+//		book3.setComment("ポインタも自由自在");
+//		books.add(book3);
+//		
+//		Collections.sort(books);
+//		
+//	    for(Book a : books) {
+//	    	System.out.println(a.getTitle());
+//	    }
 		
+//		String str = "English日本語aBc";
+//		System.out.println(String.format("切り出し前の文字列 ： %s", str));
+//		System.out.println("英小文字を大文字に変換 -> " + str.toUpperCase());
+//		System.out.println("英大文字を小文字に変換 -> " + str.toLowerCase());
 		
-		
-		Book book1 = new Book();
-		book1.setTitle("Java入門");
-		
-		try {
-		    book1.setPublishDate(f.parse("2031/10/07"));
-		    } catch (ParseException e) {
-		    e.printStackTrace();
-		    }
-		
-		book1.setComment("すっきりわかる");
-		books.add(book1);
-		
-		Book book2 = new Book();
-		book2.setTitle("python入門");
-		
-		try {
-		    book2.setPublishDate(f.parse("2019/6/11"));
-		    } catch (ParseException e) {
-		    e.printStackTrace();
-		    }
-		book2.setComment("カレーが食べたくなる");
-		books.add(book2);
-		
-		Book book3 = new Book();
-		book3.setTitle("c言語入門");
-		
-		try {
-		    book3.setPublishDate(f.parse("2018/6/21"));
-		    } catch (ParseException e) {
-		    e.printStackTrace();
-		    }
-		book3.setComment("ポインタも自由自在");
-		books.add(book3);
-		
-		Collections.sort(books);
-		
-	    for(Book a : books) {
-	    	System.out.println(a.getTitle());
-	    }
+//		String str = "ab漢字cDディーＥＦGＨＩＪzZ!$&";
+//	    System.out.println(str);
+//	    StringBuilder sb = new StringBuilder();
+//	    for(int i = 0; i < str.length(); i ++) {
+//	    	char c = str.charAt(i);
+//	    	if('a' <= c && c <= 'z') {
+//	    		c = (char)(c - 'a' + 'a');
+//	    	}else if ( 'A' <= c && c <= 'Z') {
+//	            c = (char)(c - 'A' + 'Ａ');
+//	        }
+//	        sb.append(c);
+//	      }
+//	      System.out.println(sb);
+//	      
+//	      
+//	      String str2 = "ａｂ漢字ｃＤディーefＧＨＩJｚＺ!$&";
+//	      System.out.println("変換前：" + str2);
+//	      StringBuilder sb2 = new StringBuilder();
+//	      for (int i = 0; i < str.length(); i++ ) {
+//	        char c = str2.charAt(i);
+//	        if ( 'ａ' <= c && c <= 'ｚ') {
+//	          c = (char)(c - 'ａ' + 'a' );
+//	        } else if ( 'Ａ' <= c && c <= 'Ｚ') {
+//	          c = (char)(c -  'Ａ' + 'A' );
+//	        }
+//	        sb2.append(c);
+//	      }
+//	      System.out.println("変換後：" + sb2.toString());
+	    
 	}
 }
